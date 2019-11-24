@@ -1,0 +1,498 @@
+/*
+Theme Name: Kupon
+Theme URI: http://www.azexo.com/kupon
+Version: 1.24
+Author: AZEXO
+Author URI: http://www.azexo.com
+Text Domain: AZEXO
+Description: Responsive Daily Deals Theme
+License: GNU General Public License version 3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+*/
+
+
+/*------------------------------------------------------------------
+
+CONTENTS
+All less files compiled automatically via WP Less library
+
+1. less/kupon/variables.less - less variables
+2. less/kupon/general.less - main layout
+3. less/kupon/typography.less - typography and base HTML/WP tags
+4. less/kupon/comments.less - WP comments
+5. less/kupon/post.less - WP post
+6. less/kupon/header.less - WP header
+7. less/kupon/menu.less - WP site menu
+8. less/kupon/pagination.less - WP pagination
+9. less/kupon/sidebar.less - WP sidebars
+10. less/kupon/widgets.less - WP widgets
+11. less/kupon/archive.less - WP archive page title
+12. less/kupon/templates.less - various post templates
+13. less/kupon/helpers.less - reusable classes
+14. less/kupon/visual-composer.less - visual composer shortcodes
+15. less/kupon/like.less - post like feature
+16. less/kupon/content.less - styles to use it inside post content
+17. less/kupon/woo-cart.less - WooCommerce cart page
+18. less/kupon/woo-checkout.less - WooCommerce checkout page
+19. less/kupon/woocommerce.less - WooCommerce general styles
+20. less/kupon/woo-product.less - WooCommerce single product page
+21. less/kupon/woo-reviews.less - WooCommerce reviews
+22. less/kupon/woo-templates.less - WooCommerce product templates
+23. less/kupon/woo-widgets.less - WooCommerce widgets
+
+-------------------------------------------------------------------*/
+
+.sticky {    
+}
+.wp-caption { 
+}
+.wp-caption .wp-caption-text { 
+}
+.wp-caption img { 
+}
+.gallery-caption { 
+}
+.bypostauthor {
+}
+.alignleft {
+}
+.alignright {
+}
+.aligncenter {
+}
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+}
+
+@media only screen and (max-width: 768px){
+	.modal{
+		padding: 0px !important;
+	}
+	
+	.modal-dialog {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-content {
+  height: auto;
+  min-height: 100%;
+  border-radius: 0;
+}
+}
+
+/*----------class css-----------*/
+.class-section{
+	font-family: "Varela Round", sans-serif;
+
+}
+.class-section .join-section{
+	padding: 20px;
+	text-align: center;
+	margin:60px auto;
+}
+.class-section .join-section .title{
+	font-size: 36px;
+	font-weight: bold;
+	color: #636161;
+	margin-bottom: 16px;
+
+	
+
+}
+.class-section .join-section .subtitle{
+	font-size: 26px;
+	font-weight: lighter;
+	color: grey;
+	margin-bottom: 16px;
+}
+.class-section .join-section .join-button{
+	margin-top: 60px;
+}
+.class-section .join-section .join-button a{
+	padding: 10px 15px;
+	background: #5cbc2e;
+	font-size: 16px;
+	border-radius: 5px;
+	color: white;
+	text-decoration: none;
+
+}
+.class-section .join-section .join-button a:hover{
+	background: #28a745;
+}
+
+
+/*--------------------syllabus section-----------------*/
+.class-section .syllabus-section{
+	
+	padding: 80px 20px;
+	background: #f4f4f4;
+
+}
+.class-section .syllabus-section .title{
+	font-size: 36px;
+	font-weight: bold;
+	color: #636161;
+	text-align: center;
+	margin-bottom: 16px;
+}
+.class-section .syllabus-section .content{
+	margin: 40px auto;
+}
+.class-section .syllabus-section .content .subject{
+	background: #ffffff;
+	padding: 30px;
+	box-shadow: 0 0 10px 0 rgba(0,0,0,.07);
+	margin-bottom: 25px;
+}
+.class-section .syllabus-section .content .subject .subject-name{
+	font-family: sans-serif;
+	font-size: 20px;
+	color: #5bbc2e;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+
+/*--------mobile view---------------*/
+@media only screen and (max-width: 768px){
+.class-section .syllabus-section .content .subject{
+	padding: 10px 30px;
+}
+.class-section .syllabus-section .content .subject .subject-name{
+	line-height: 60px;
+}
+
+}
+
+
+/*----------quiz.css---------------*/
+.quiz{
+	position: relative;
+}
+.quiz nav{
+	height: 80px;
+}
+.quiz .quit-section{
+	position: absolute;
+	top: 30px;
+	right: 5%;
+	z-index: 1;
+}
+.quiz .quit-section .quit a{
+	border:2px solid white;
+	padding: 5px 10px;
+	border-radius: 5px;
+	color: white;
+	z-index: 999999;
+}
+.quiz .quit-section .quit:hover a{
+background-color: white;
+color: green;
+text-decoration: none;
+}
+.test-section{
+	margin-top: 100px;
+}
+.timer-container{
+	margin:0px auto;
+	position: absolute;
+	width: 100%;
+	height: 200px;
+	top: 0px;
+
+}
+.timer-wrapper{
+	margin:10px auto;
+	width: 140px;
+	height: 140px;
+	background:white;
+	border-radius: 50%;
+	box-shadow: 0px 5px #eaf3ec;
+}
+.timer-wrapper .time{
+	line-height: 5.5;
+	font-size: 25px;
+	color: #1ba01b;
+	text-align: center;
+	font-family: 'Orbitron', sans-serif;
+}
+
+.question-container{
+	margin: 20px auto;
+}
+.question-title{
+	font-size: 24px;
+	color:green;
+	font-weight: bold;		
+}
+.answer-container{
+
+}
+.answer-wrapper{
+	border:1px solid green;
+	border-radius: 5px;
+	padding: 10px 10px;
+	display: flex;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.answer-wrapper:hover{
+	background-color: #ccffd8;
+}
+.option-number{
+	border: 0.5px solid #47b15f;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding:0px 7px;
+	margin:0 auto;
+	color: slategray;
+	border-radius: 5px;
+
+
+}
+.option{
+	flex: 1;
+	margin-left: 10px;
+	font-size: 18px;
+	color: #069426;
+	font-weight: bold;
+}
+.option-tick{
+	display: none;
+	color: green;
+}
+.answer-wrapper:hover .option-number{
+	padding: 0px 20px;
+	transition: padding 0.2s ease-in;
+	background-color: #1cb13e;
+	color: white;
+}
+.answer-wrapper:hover .option-tick{
+	display: block;
+}
+.progress-container{
+	position: fixed;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	
+}
+.progress-container .progress{
+	height: 30px;
+}
+.progress-container .progress .progress-bar{
+	background-color: #47b15f;
+}
+.quiz .button-section{
+	margin: 30px auto;
+}
+.quiz .button-section .button-row{
+	display: flex;
+}
+.quiz .button-section .button-row .prev-btn{
+	border: 2px solid #47b15f;
+	display: inline-block;
+	border-radius: 5px;
+	padding: 5px;
+	width: 100px;
+	text-align: center;
+}
+.quiz .button-section .button-row .prev-btn i, .quiz .button-section .button-row .next-btn i{
+	color: #47b15f;
+	font-size: 18px;
+}
+.quiz .button-section .button-row .prev-btn:hover , .quiz .button-section .button-row .next-btn:hover {
+	background-color: #47b15f;
+	transition:  background-color 0.2s linear;
+	color: white;
+}
+.quiz .button-section .button-row .prev-btn:hover i, .quiz .button-section .button-row .next-btn:hover i{
+	visibility: visible;
+	opacity: 1;
+	color: white;
+	transition:  visibility 0s, opacity 0.4s linear;
+}
+.quiz .button-section .button-row .next-btn{
+	border: 2px solid #47b15f;
+	display: inline-block;
+	border-radius: 5px;
+	padding: 5px;
+	justify-content: right;
+	width: 100px;
+	text-align: center;
+}
+
+
+@media (max-width: 768px)
+{
+	.answer-wrapper{
+	
+	padding: 5px 5px;
+	
+	}
+	.quiz nav {
+    height: 70px;
+	}
+	.timer-wrapper {
+    margin: 20px auto;
+    width: 100px;
+    height: 100px;
+	}
+	.timer-wrapper .time {
+    line-height: 6;
+    font-size: 16px;
+	}
+	.question-title {
+    font-size: 16px;
+	}
+	.quiz .quit-section {
+		top:25px;
+	}
+	.test-section {
+    margin-top: 80px;
+	}
+	.option{
+		font-size: 14px;
+	}
+	.option-number{
+		font-size: 12px;
+		padding: 0px 5px;
+	}
+	.question-container {
+    margin: 20px auto 10px auto;
+	}
+	.quiz .button-section .button-row .prev-btn i, .quiz .button-section .button-row .next-btn i{
+	color: #47b15f;
+	font-size: 18px;
+	}
+	.quiz .button-section .button-row .prev-btn span, .quiz .button-section .button-row .next-btn span{
+		display: none;
+	}
+	.quiz .button-section .button-row .prev-btn:hover i, .quiz .button-section .button-row .next-btn:hover i{
+	visibility: visible;
+	opacity: 1;
+	transition:  visibility 0s, opacity 0.4s linear;
+	}
+	.quiz .button-section .button-row .prev-btn, .quiz .button-section .button-row .next-btn{
+		width: 40px;
+	}
+}
+
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #4a8457	; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#mySidenav a {
+  position: absolute; /* Position them relative to the browser window */
+ right: -30px; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding: 15px; /* 15px padding */
+  width: 100px; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  color: white; /* White text color */
+  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+}
+
+
+
+
+.off-canvas-btn{
+	position: fixed;
+	top:15%;
+	left: -80px;
+	width: 120px;
+	height: 50px;
+	background: #47b15f;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px; 
+	z-index: 1;
+}
+.off-canvas-btn:hover{
+	left: 0px;
+	transition: left 0.3s linear;
+}
+.off-canvas-btn .canvas-btn{
+	line-height: 3;
+	color: white;
+	padding: 0px 5px  0px 25px;
+	text-decoration: none;
+	cursor: pointer;
+}
+.off-canvas-btn .canvas-btn i{
+	padding-left: 15px;
+}
